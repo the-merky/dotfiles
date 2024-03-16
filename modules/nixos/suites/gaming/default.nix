@@ -7,10 +7,10 @@
 }:
 with lib;
 with lib.custom; let
-  cfg = config.suites.common;
+  cfg = config.suites.gaming;
 in {
-  options.suites.common = with types; {
-    enable = mkBoolOpt false "Enable the common suite";
+  options.suites.gaming = with types; {
+    enable = mkBoolOpt false "Enable the gaming suite";
   };
 
   config = mkIf cfg.enable {

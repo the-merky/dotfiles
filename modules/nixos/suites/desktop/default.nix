@@ -7,10 +7,10 @@
 }:
 with lib;
 with lib.custom; let
-  cfg = config.suites.common;
+  cfg = config.suites.desktop;
 in {
-  options.suites.common = with types; {
-    enable = mkBoolOpt false "Enable the common suite";
+  options.suites.desktop = with types; {
+    enable = mkBoolOpt false "Enable the desktop suite";
   };
 
   config = mkIf cfg.enable {
