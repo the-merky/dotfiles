@@ -10,7 +10,8 @@
   environment.systemPackages = with pkgs; [
     # Any particular packages only for this host
   ];
-
+  #Fix conflicts
+  hardware.pulseaudio.enable = false;
   suites.common.enable = true; # Enables the basics, like audio, networking, ssh, etc.
   suites.development.enable = true;
   suites.desktop.enable = true;

@@ -7,9 +7,9 @@
 }:
 with lib;
 with lib.custom; let
-  cfg = config.suites.desktop;
+  cfg = config.suites.development;
 in {
-  options.suites.desktop = with types; {
+  options.suites.development = with types; {
     enable = mkBoolOpt false "Enable the desktop suite";
   };
 
