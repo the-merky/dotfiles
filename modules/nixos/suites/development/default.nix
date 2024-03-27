@@ -14,6 +14,6 @@ in {
   };
 
   config = mkIf cfg.enable {
-     environment.systemPackages = [ pkgs.git pkgs.rustup pkgs.jetbrains.rust-rover pkgs.neovim pkgs.neovide pkgs.foot pkgs.vscode pkgs.fzf];
+     environment.systemPackages = [ pkgs.unzip pkgs.git pkgs.rustup pkgs.jetbrains.rust-rover pkgs.jetbrains-toolbox pkgs.neovim pkgs.neovide pkgs.foot pkgs.vscode pkgs.fzf pkgs.gcc];
      };
 }
